@@ -1,0 +1,158 @@
+{
+ "api_kulcsok": {
+    "gemini": "kulcs",
+    "openai": "kulcs"
+  },
+  "google_forms_beallitasok": {
+    "hitelesito_fajl": "credentials.json",
+    "tablazat_neve": "ÖnállóLabor (válaszok)"
+  },
+  "ai_beallitasok": {
+    "modellek": [
+      "gemini-3.1-pro-preview",
+      "gemini-3-flash-preview",
+      "gemini-2.5-pro",
+      "gemini-2.5-flash",
+      "gemini-3.1-flash-lite",
+      "gpt-4o-mini",
+      "gpt-4-turbo"
+    ],
+    "homerseklet_kezdo": 0.0,
+    "homerseklet_max": 2.0,
+    "homerseklet_lepes": 0.5
+  },
+  "kerdesek": [
+    {
+      "sorszam": 1,
+      "tipus": "szabad_asszociacio",
+      "egyszavas": true,
+      "hivoszo_vagy_referencia": "dohos",
+      "prompt": "Mondok egy szót, neked pedig az első, legszorosabb fogalmat kell visszaírnod, ami eszedbe jut róla. Ne magyarázkodj. Válaszként csak egyetlen magyar szót írhatsz, ami a legközelebb áll az adott szóhoz. A szó: dohos",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 2,
+      "tipus": "szabad_asszociacio",
+      "egyszavas": true,
+      "hivoszo_vagy_referencia": "fémes",
+      "prompt": "Mondok egy szót, neked pedig az első, legszorosabb fogalmat kell visszaírnod, ami eszedbe jut róla. Ne magyarázkodj. Válaszként csak egyetlen magyar szót írhatsz, ami a legközelebb áll az adott szóhoz. A szó: fémes",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 3,
+      "tipus": "szabad_asszociacio",
+      "egyszavas": true,
+      "hivoszo_vagy_referencia": "megvetés",
+      "prompt": "Mondok egy szót, neked pedig az első, legszorosabb fogalmat kell visszaírnod, ami eszedbe jut róla. Ne magyarázkodj. Válaszként csak egyetlen magyar szót írhatsz, ami a legközelebb áll az adott szóhoz. A szó: megvetés",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 4,
+      "tipus": "szabad_asszociacio",
+      "egyszavas": true,
+      "hivoszo_vagy_referencia": "téboly",
+      "prompt": "Mondok egy szót, neked pedig az első, legszorosabb fogalmat kell visszaírnod, ami eszedbe jut róla. Ne magyarázkodj. Válaszként csak egyetlen magyar szót írhatsz, ami a legközelebb áll az adott szóhoz. A szó: téboly",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 5,
+      "tipus": "szabad_asszociacio",
+      "egyszavas": true,
+      "hivoszo_vagy_referencia": "koncentráció",
+      "prompt": "Mondok egy szót, neked pedig az első, legszorosabb fogalmat kell visszaírnod, ami eszedbe jut róla. Ne magyarázkodj. Válaszként csak egyetlen magyar szót írhatsz, ami a legközelebb áll az adott szóhoz. A szó: koncentráció",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 6,
+      "tipus": "asszociacios_lanc",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "küszöb",
+      "prompt": "Egyetlen hívószóból kiindulva egy gondolati láncot kell alkotnod. Ne az eredeti szóhoz térj vissza, hanem minden új fogalom az azt közvetlenül megelőző szóból fakadjon. Írd le az első szót, ami a hívószóról eszedbe jut, majd az erről eszedbe jutó következőt, és így tovább, amíg el nem éred a 3 fogalmat. A szavakat vesszővel elválasztva rögzítsd! A lánc első szava: küszöb",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 7,
+      "tipus": "asszociacios_lanc",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "diadal",
+      "prompt": "Egyetlen hívószóból kiindulva egy gondolati láncot kell alkotnod. Ne az eredeti szóhoz térj vissza, hanem minden új fogalom az azt közvetlenül megelőző szóból fakadjon. Írd le az első szót, ami a hívószóról eszedbe jut, majd az erről eszedbe jutó következőt, és így tovább, amíg el nem éred a 3 fogalmat. A szavakat vesszővel elválasztva rögzítsd! A lánc első szava: diadal",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 8,
+      "tipus": "asszociacios_lanc",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "csend",
+      "prompt": "Egyetlen hívószóból kiindulva egy gondolati láncot kell alkotnod. Ne az eredeti szóhoz térj vissza, hanem minden új fogalom az azt közvetlenül megelőző szóból fakadjon. Írd le az első szót, ami a hívószóról eszedbe jut, majd az erről eszedbe jutó következőt, és így tovább, amíg el nem éred a 3 fogalmat. A szavakat vesszővel elválasztva rögzítsd! A lánc első szava: csend",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 9,
+      "tipus": "divergens_asszociacio",
+      "egyszavas": true,
+      "hivoszo_vagy_referencia": "kötél",
+      "prompt": "Rögzítsd azt a legtávolabbi, legidegenebb fogalmat, amely a megadott hívószóról eszedbe jut. Egyetlen szóval válaszolj! Tudatosan kerüld az ellentétpárokat! (Gondolj arra: melyik az a szó, amelyet soha, semmilyen szövegkörnyezetben nem hallottál még egy mondatban a hívószóval?) A szó: kötél",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 10,
+      "tipus": "divergens_asszociacio",
+      "egyszavas": true,
+      "hivoszo_vagy_referencia": "lelkesedés",
+      "prompt": "Rögzítsd azt a legtávolabbi, legidegenebb fogalmat, amely a megadott hívószóról eszedbe jut. Egyetlen szóval válaszolj! Tudatosan kerüld az ellentétpárokat! (Gondolj arra: melyik az a szó, amelyet soha, semmilyen szövegkörnyezetben nem hallottál még egy mondatban a hívószóval?) A szó: lelkesedés",
+      "futtatando_tesztek": ["tavolsag", "konkretsag"]
+    },
+    {
+      "sorszam": 11,
+      "tipus": "szituacios_projekcio",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "nincs",
+      "prompt": "Helyezd magad a következő élethelyzetbe. Ne csupán a logikus megoldást keresd, hanem figyelj a belső megéléseidre is. 3-4 teljes mondatban válaszolj. A helyzet: Valaki leszólít az utcán. Folyamatosan beszél, de nem beszéled a nyelvét.",
+      "futtatando_tesztek": ["konkretsag", "erzelem", "szofaj_elemzes", "ismetlodes"]
+    },
+    {
+      "sorszam": 12,
+      "tipus": "szituacios_projekcio",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "nincs",
+      "prompt": "Helyezd magad a következő élethelyzetbe. Ne csupán a logikus megoldást keresd, hanem figyelj a belső megéléseidre is. 3-4 teljes mondatban válaszolj. A helyzet: Valaki ötször keresett zsinórban egy ismeretlen számról.",
+      "futtatando_tesztek": ["konkretsag", "erzelem", "szofaj_elemzes", "ismetlodes"]
+    },
+{
+      "sorszam": 13,
+      "tipus": "konkret_vizualis_reflexio",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "nincs",
+      "kep_eleresi_ut": "kepek/konkret_1.jpg",
+      "prompt": "Egy képet mutatok be neked...",
+      "futtatando_tesztek": ["konkretsag", "erzelem", "szofaj_elemzes", "ismetlodes"]
+    },
+    {
+      "sorszam": 14,
+      "tipus": "konkret_vizualis_reflexio",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "nincs",
+      "kep_eleresi_ut": "kepek/konkret_2.jpg",
+      "prompt": "Egy képet mutatok be neked...",
+      "futtatando_tesztek": ["konkretsag", "erzelem", "szofaj_elemzes", "ismetlodes"]
+    },
+    {
+      "sorszam": 15,
+      "tipus": "absztrakt_vizualis_reflexio",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "nincs",
+      "kep_eleresi_ut": "kepek/absztrakt_1.jpg",
+      "prompt": "Egy absztrakt alkotást mutatok be neked...",
+      "futtatando_tesztek": ["konkretsag", "erzelem", "szofaj_elemzes", "ismetlodes"]
+    },
+    {
+      "sorszam": 16,
+      "tipus": "absztrakt_vizualis_reflexio",
+      "egyszavas": false,
+      "hivoszo_vagy_referencia": "nincs",
+      "kep_eleresi_ut": "kepek/absztrakt_2.jpg",
+      "prompt": "Egy absztrakt alkotást mutatok be neked...",
+      "futtatando_tesztek": ["konkretsag", "erzelem", "szofaj_elemzes", "ismetlodes"]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+Te egy szigorú és precíz adatfeldolgozó algoritmus vagy. Keresd meg a szövegben az <OSZLOP_X> és </OSZLOP_X> tag-eket. Ezek között magyar nyelvű, |#| jelekkel elválasztott adatokat találsz.
+
+A FELADATOD: Alkalmazd az alábbi tisztítási szabályokat a tag-eken belüli adatokra, majd add vissza az eredményt PONTOSAN az eredeti formátumban.
+
+TISZTÍTÁSI SZABÁLYOK:
+1. Javítsd a helyesírási hibákat.
+2. Töröld az összes emojit.
+3. Töröld az értelmetlen random karakterláncokat (pl. 'asdfg', 'aaaa') és a felesleges rövidítéseket.
+4. Ha egy cella eredetileg üres volt, VAGY a tisztítás (pl. szemét törlése) miatt kiürül, HAGYD ÜRESEN, DE AZ ELVÁLASZTÓ JELT (|#|) KÖTELEZŐ MEGTARTANI!
+5. KRITIKUS SZABÁLY: SZIGORÚAN tilos megváltoztatni a |#| jelek számát! Az adatok struktúrája nem sérülhet.
+
+KIMENETI KÖVETELMÉNYEK:
+- KIZÁRÓLAG az <OSZLOP_X> tag-eket és a közte lévő tisztított adatokat adhatod vissza.
+- TILOS bármilyen bevezető szöveget, magyarázatot, üdvözlést vagy záró gondolatot írni.
+- TILOS markdown formázást (pl. ``` vagy félkövér betű) használni.
+
+FELDOLGOZANDÓ ADATOK:
+
+<OSZLOP_1>
+szekrény |#| Dohány |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_1>
+
+<OSZLOP_2>
+íz |#| Íz |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_2>
+
+<OSZLOP_3>
+mutttat |#| Mást |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_3>
+
+<OSZLOP_4>
+kocsmaa |#| Őrűlt |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_4>
+
+<OSZLOP_5>
+tanulás |#| Zavar |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_5>
+
+<OSZLOP_6>
+ajtó, fa, gyökér |#| Ajtò, ház, otthon |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_6>
+
+<OSZLOP_7>
+ló, szőr, biológia |#| Ív, épület, ház |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_7>
+
+<OSZLOP_8>
+ég, felhők, gáz |#| Sötét, este, alvás |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_8>
+
+<OSZLOP_9>
+irigység |#| Porcelán |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_9>
+
+<OSZLOP_10>
+kapuafa |#| Szar |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_10>
+
+<OSZLOP_11>
+El akarom hagyni a szituációt. Az illető nem normális. Próbálnék segíteni, de ha nem megy otthagynán. Valószínűleg a másik fél zavarodott. |#| Furcsa/ zavarodott helyzet, valószinűleg útba igazitás kellene az embernek, feltételezhetőleg vmi kézi jelekből/ google translate-el tudunk kommunikálni minimálisan |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_11>
+
+<OSZLOP_12>
+Idegességet éreznék. Scam call valószínűleg. Blokkolnám a számot. Scammelni akar a másik fél. |#| Idegesítő az ilyen, valószínűleg scam hívás és ignorálnám. A másik fél gondolom random telefon számot kapott, és azért hívott |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_12>
+
+<OSZLOP_13>
+Az illető nagyon bevállalós, veszélyes életet él. Nyilván nem fél a magasságoktól. A kép álom szerű. |#| Elég tériszonyos jelenet, az ember nem tűnik úgy, mintha ülne, tehát épp a halálába zuhan |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_13>
+
+<OSZLOP_14>
+A képet kellemetlen nézni, mert az agyam elképzeli a savanyú ízt a számban. A fogaknak nem jó ha így beleharapsz egy citromba. |#| Még csak nem is harap bele a citrom gerezdbe, csak a szélébe egy keveset max, és tequila sincs a kezében, se sò |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_14>
+
+<OSZLOP_15>
+Ez valami lenyomata valaminek. Vagy lehet, hogy kifolyt valami és azt látjuk. Kicsit hasonlít egy állat arcára a középső rész. |#| Ez gyanusan egy pszichológiai tesztből kivett kép, y tengelyre párhuzamos elfolyt tinta folt |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_15>
+
+<OSZLOP_16>
+Ez engem egy rovarra emlékeztet, fent olyan mintha csápok lennének. De ez is inkább olyan mintha festék folyt volna ki, és fröcskölt volna szét. |#| Bogárra hasonlító tinta folt, esetleg egy agy silohuett-je is felvélhető az alakbòl fura kinövésekkel |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#|  |#| 
+</OSZLOP_16>
+
