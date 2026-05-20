@@ -66,7 +66,7 @@ class MestersagesIntelligenciaKezelo:
             return
 
         print("\n" + "="*40)
-        print("   AI VÁLASZOK GENERÁLÁSA INDUL (EXCEL-BIZTOS CHECKPOINT)")
+        print("   AI VÁLASZOK GENERÁLÁSA INDUL ")
         print("="*40)
         
         ai_beallitasok = self.konfig.ertekLekerese("ai_beallitasok")
