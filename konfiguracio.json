@@ -1,7 +1,7 @@
 {
  "api_kulcsok": {
-    "gemini": "kulcs",
-    "openai": "kulcs"
+    "gemini": "",
+    "openai": ""
   },
   "google_forms_beallitasok": {
     "hitelesito_fajl": "credentials.json",
